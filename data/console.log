@@ -1,0 +1,154 @@
+-----------------------------------------------------------------------------------------------------------------------------
+Demonstration of supervised classification based Machine Learning using Logistic Regression. v1.0 - Dhaval Salwala (18230845)
+Part of Continuous Assessment - Machine Learning and Data Mining [CT475], National University Of Ireland Galway
+Tutor: Professor Michael Madden
+-----------------------------------------------------------------------------------------------------------------------------
+
+==> Please enter the absolute path of the classification data file. You can use one of the sample file present in the data directory of the project. 
+Make sure all the attributes are numeric except for the target attribute.
+
+1. Enter Absolute File Path (Valid Extension: .xls .xlsx .txt .csv) :/home/dsalwala/owls.csv
+2. Enter Column names (including target column) in the same order as in file seperated by comma without any space :body-length,wing-length,body-width,wing-width,type
+3. Enter Target column name :type
+
+==>Initialising Supervised Learning... Preparing for launch...
+
+==>Pre-processing source file:/home/dsalwala/owls.csv
+Converting target variable into numerical form with the following mapping.
+{'BarnOwl': 0, 'LongEaredOwl': 1, 'SnowyOwl': 2}
+
+Applying 10 Fold Cross Validation.
+
+Finished after  2000  iterations: theta= [ 0.02715753 -0.6842089   0.00638416  0.42579352 -0.35747045]
+
+Finished after  2000  iterations: theta= [ 0.22666919  1.1001088   0.37835726 -1.8160435  -0.79307123]
+
+Finished after  2000  iterations: theta= [-0.38342875 -1.00782828 -0.91257651  1.47442589  1.11500378]
+Fold 1 Accuracy: 0.933333333333
+Precision, Recall and F_score: (0.94444444444444453, 0.94117647058823517, 0.93743890518084072, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0           14    0    3
+1            0   13    0
+2            0    0   15
+
+Finished after  2000  iterations: theta= [ 0.16848991 -0.66287538  0.08391121  0.26672085 -0.25977649]
+
+Finished after  2000  iterations: theta= [ 0.18746899  1.13338041  0.28596034 -1.76368468 -0.79024594]
+
+Finished after  2000  iterations: theta= [-0.4509548  -1.04976882 -0.91335917  1.52175478  1.06690595]
+Fold 2 Accuracy: 0.955555555556
+Precision, Recall and F_score: (0.95833333333333337, 0.94444444444444453, 0.94747474747474758, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0           10    0    2
+1            0   19    0
+2            0    0   14
+
+Finished after  2000  iterations: theta= [ 0.11150799 -0.78957977  0.10219165  0.40857251 -0.27411633]
+
+Finished after  2000  iterations: theta= [ 0.22087141  1.14275363  0.32700018 -1.82601715 -0.79805189]
+
+Finished after  2000  iterations: theta= [-0.44589537 -0.95944881 -0.95229227  1.46196264  1.05619498]
+Fold 3 Accuracy: 0.977777777778
+Precision, Recall and F_score: (0.96296296296296291, 0.98333333333333339, 0.97184514831573654, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0            8    0    0
+1            0   17    0
+2            1    0   19
+
+Finished after  2000  iterations: theta= [ 0.06630102 -0.83899381  0.05199899  0.4335272  -0.32723222]
+
+Finished after  2000  iterations: theta= [ 0.22907638  1.15960626  0.3583813  -1.81893984 -0.80271193]
+
+Finished after  2000  iterations: theta= [-0.4180923  -0.89312578 -0.92224671  1.41984154  1.13787278]
+Fold 4 Accuracy: 0.888888888889
+Precision, Recall and F_score: (0.9242424242424242, 0.90740740740740744, 0.90350151640474208, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0           13    0    5
+1            0   10    0
+2            0    0   17
+
+Finished after  2000  iterations: theta= [ 0.01363075 -0.65617528  0.03333821  0.30711149 -0.27115646]
+
+Finished after  2000  iterations: theta= [ 0.23751678  1.12892166  0.34321894 -1.79592148 -0.81199061]
+
+Finished after  2000  iterations: theta= [-0.39102498 -1.0515347  -0.90235013  1.53594973  1.0855108 ]
+Fold 5 Accuracy: 0.777777777778
+Precision, Recall and F_score: (0.84848484848484851, 0.82456140350877194, 0.78291316526610633, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0            9    0   10
+1            0   14    0
+2            0    0   12
+
+Finished after  2000  iterations: theta= [ 0.12901805 -0.72077762 -0.01640336  0.44920296 -0.260281  ]
+
+Finished after  2000  iterations: theta= [ 0.22576609  1.16088251  0.35168483 -1.83130534 -0.84405637]
+
+Finished after  2000  iterations: theta= [-0.4614179  -0.99790431 -0.88066931  1.44199976  1.10652934]
+Fold 6 Accuracy: 0.933333333333
+Precision, Recall and F_score: (0.95238095238095244, 0.93333333333333324, 0.93732193732193725, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0           12    0    3
+1            0   12    0
+2            0    0   18
+
+Finished after  2000  iterations: theta= [ 0.10586365 -0.67514884  0.02826976  0.32783773 -0.25471861]
+
+Finished after  2000  iterations: theta= [ 0.21964631  1.09587127  0.3510795  -1.80797558 -0.79280022]
+
+Finished after  2000  iterations: theta= [-0.44084069 -1.01633824 -0.89230219  1.50916016  1.03571636]
+Fold 7 Accuracy: 0.866666666667
+Precision, Recall and F_score: (0.89473684210526316, 0.875, 0.86057692307692302, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0           10    0    6
+1            0   16    0
+2            0    0   13
+
+Finished after  2000  iterations: theta= [ 0.10814145 -0.7651334   0.02483855  0.32401414 -0.25328986]
+
+Finished after  2000  iterations: theta= [ 0.22012109  1.1592874   0.36416002 -1.81712733 -0.81614572]
+
+Finished after  2000  iterations: theta= [-0.4305889  -0.9709106  -0.92936261  1.55106778  1.06421355]
+Fold 8 Accuracy: 0.644444444444
+Precision, Recall and F_score: (0.8160919540229884, 0.75757575757575746, 0.68253968253968245, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0            6    0   16
+1            0   10    0
+2            0    0   13
+
+Finished after  2000  iterations: theta= [ 0.07936323 -0.55912504 -0.08007645  0.38237127 -0.29358472]
+
+Finished after  2000  iterations: theta= [ 0.21751874  1.11278943  0.35247066 -1.77146703 -0.79157893]
+
+Finished after  2000  iterations: theta= [-0.41097308 -1.09579174 -0.81509911  1.44421534  1.07878783]
+Fold 9 Accuracy: 0.866666666667
+Precision, Recall and F_score: (0.88235294117647056, 0.89473684210526316, 0.86607142857142849, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0           13    0    6
+1            0   15    0
+2            0    0   11
+
+Finished after  2000  iterations: theta= [ 0.14526234 -0.6985769   0.00495833  0.39798835 -0.23206944]
+
+Finished after  2000  iterations: theta= [ 0.21249024  1.14925333  0.34541407 -1.83277407 -0.80193038]
+
+Finished after  2000  iterations: theta= [-0.45363001 -1.02217097 -0.91944209  1.4997036   1.05582103]
+Fold 10 Accuracy: 0.955555555556
+Precision, Recall and F_score: (0.96666666666666667, 0.95238095238095244, 0.95681511470985148, None)
+Confusion Matrix: Predicted  0.0  1.0  2.0
+Actual                  
+0           12    0    2
+1            0   13    0
+2            0    0   18
+
+Average accuracy of a model after 10 fold is 0.88
+
+Process finished with exit code 0
